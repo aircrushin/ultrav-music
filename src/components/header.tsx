@@ -9,23 +9,23 @@ export default function Header() {
   return (
     <header className="flex items-center justify-between px-6 py-3 bg-gradient-to-r from-[#0F172A] to-[#1E293B] text-white shadow-md">
       <div className="flex items-center">
-        <Link href="#">
+        <Link href="/">
         <div className="text-2xl font-bold italic">UltraV Music</div>
         </Link>
       </div>
       <nav className="hidden md:flex items-center space-x-6">
-        <Link className="hover:underline" href="#">
+        <Link className="hover:underline" href="/#music-section">
           Music
         </Link>
-        <Link className="hover:underline" href="#">
-          Bio
+        <Link className="hover:underline" href="/about">
+          About Me
         </Link>
-        <Link className="hover:underline" href="#">
+        {/* <Link className="hover:underline" href="#">
           Shows
         </Link>
         <Link className="hover:underline" href="#">
           Contact
-        </Link>
+        </Link> */}
       </nav>
       <button className="md:hidden p-2 rounded-md hover:bg-gray-700">
         <MenuIcon className="h-6 w-6" />
@@ -34,7 +34,7 @@ export default function Header() {
   )
 }
 
-function MenuIcon(props) {
+function MenuIcon(props: any) {
   return (
     <svg
       {...props}

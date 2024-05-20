@@ -1,5 +1,5 @@
 // components/Hero.js
-import Typewriter from '../components/Typewriter';
+import Typewriter from './Typewriter';
 export default function Hero() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-[#0F172A] to-[#1E293B] text-white">
