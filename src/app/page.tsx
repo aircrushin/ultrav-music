@@ -4,7 +4,6 @@ import Music from '../components/music'
 export default function Home() {
   return (
     <div>
-        <Header />
         <Hero />
         <Music />
     </div>

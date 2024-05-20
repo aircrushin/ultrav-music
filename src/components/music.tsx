@@ -36,7 +36,7 @@ const tracks = [
 export default function Music() {
   return (
     <>
-      <section className="w-full py-12 md:py-24" id="music-section">
+      <section className="w-full py-12 md:py-24 bg-slate-200" id="music-section">
         <div className="px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <div className="flex flex-col justify-center space-y-4 px-4">
@@ -68,7 +68,7 @@ export default function Music() {
           </div>
         </div>
       </section>
-      <section className="w-full py-4 md:py-6 lg:py-8 px-4" id="tracks">
+      <section className="w-full py-4 md:py-6 lg:py-8 px-4 bg-slate-50" id="tracks">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 md:px-6">
           {tracks.map((track, index) => (
             <div key={index} className="relative group overflow-hidden rounded-lg">

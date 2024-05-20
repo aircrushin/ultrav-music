@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between px-6 py-3 bg-gradient-to-r from-[#0F172A] to-[#1E293B] text-white shadow-md">
+    <header className="flex items-center justify-between px-6 py-3 bg-gradient-to-r from-[#495057] to-[#1E293B] text-white shadow-md">
       <div className="flex items-center">
         <Link href="/">
         <div className="text-2xl font-bold italic">UltraV Music</div>
