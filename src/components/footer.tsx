@@ -4,7 +4,7 @@ export default function Component() {
     return (
         <footer className="bg-gray-900 text-white py-12 md:py-16 lg:py-20">
             <div className="container mx-auto px-4 md:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
                     <div className="flex flex-col items-start">
                         <Link className="flex items-center space-x-2 mb-4" href="#">
                             <MusicIcon className="h-8 w-8" />
@@ -63,6 +63,26 @@ export default function Component() {
                             <li>
                                 <Link className="text-gray-400 hover:text-white" href="#">
                                     Terms of Service
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="flex flex-col items-start">
+                        <h3 className="text-lg font-bold mb-4">Friends</h3>
+                        <ul className="space-y-2">
+                            <li>
+                                <Link className="text-gray-400 hover:text-white" href="https://chillseason.zeabur.app/">
+                                    Chillseason
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className="text-gray-400 hover:text-white" href="https://zeabur.com/">
+                                    Zeabur
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className="text-gray-400 hover:text-white" href="https://www.atlast.fm/">
+                                ATLAST
                                 </Link>
                             </li>
                         </ul>

@@ -9,7 +9,7 @@ export default function Header() {
     <header className="relative flex items-center justify-between px-6 py-4 bg-[#181b1d] text-white shadow-md">
       <div className="flex items-center">
         <Link href="/">
-          <div className="text-2xl font-bold italic">UltraV Music</div>
+          <div className="text-2xl font-bold italic text-gradient px-2 hover:scale-105">UV</div>
         </Link>
       </div>
       <nav className="hidden md:flex items-center space-x-6">

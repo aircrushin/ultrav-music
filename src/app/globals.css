@@ -69,3 +69,9 @@ body {
 .animate-scale-in {
   animation: scaleIn 2s ease-in-out;
 }
+
+.text-gradient {
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
