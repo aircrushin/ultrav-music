@@ -60,7 +60,7 @@ export default function Music() {
             </div>
             <img
               alt="Hero"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-square"
+              className="mx-auto aspect-video overflow-hidden rounded-xl object-bottom sm:w-full  lg:order-last lg:aspect-square"
               height="500"
               src="/cover.jpg"
               width="500"
@@ -68,7 +68,7 @@ export default function Music() {
           </div>
         </div>
       </section>
-      <section className="w-full py-4 md:py-6 lg:py-8 px-4 bg-slate-50" id="tracks">
+      {/* <section className="w-full py-4 md:py-6 lg:py-8 px-4 bg-slate-50" id="tracks">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 md:px-6">
           {tracks.map((track, index) => (
             <div key={index} className="relative group overflow-hidden rounded-lg">
@@ -98,7 +98,7 @@ export default function Music() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

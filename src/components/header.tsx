@@ -1,16 +1,15 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/aOwCeZeocxB
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
-import Link from "next/link"
+"use client"
+import { useState } from "react";
+import Link from "next/link";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className="flex items-center justify-between px-6 py-3 bg-gradient-to-r from-[#495057] to-[#1E293B] text-white shadow-md">
+    <header className="relative flex items-center justify-between px-6 py-4 bg-[#181b1d] text-white shadow-md">
       <div className="flex items-center">
         <Link href="/">
-        <div className="text-2xl font-bold italic">UltraV Music</div>
+          <div className="text-2xl font-bold italic">UltraV Music</div>
         </Link>
       </div>
       <nav className="hidden md:flex items-center space-x-6">
@@ -27,14 +26,28 @@ export default function Header() {
           Contact
         </Link> */}
       </nav>
-      <button className="md:hidden p-2 rounded-md hover:bg-gray-700">
+      <button
+        className="md:hidden p-2 rounded-md hover:bg-gray-700"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
         <MenuIcon className="h-6 w-6" />
       </button>
+
+      {isMenuOpen && (
+        <nav className="absolute top-full right-0 w-1/3 bg-[#1E293B] text-white shadow-md flex flex-col items-start space-y-2 p-4 md:hidden">
+          <Link className="hover:underline" href="/#music-section">
+            Music
+          </Link>
+          <Link className="hover:underline" href="/about">
+            About Me
+          </Link>
+        </nav>
+      )}
     </header>
-  )
+  );
 }
 
-function MenuIcon(props: any) {
+function MenuIcon(props:any) {
   return (
     <svg
       {...props}
@@ -52,5 +65,5 @@ function MenuIcon(props: any) {
       <line x1="4" x2="20" y1="6" y2="6" />
       <line x1="4" x2="20" y1="18" y2="18" />
     </svg>
-  )
+  );
 }

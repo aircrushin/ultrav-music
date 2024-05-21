@@ -3,7 +3,7 @@ import Typewriter from './Typewriter';
 import Header from './header'
 export default function Hero() {
   return (
-    <div className="lg:h-screen bg-gradient-to-r from-[#343a40] to-[#1E293B]">
+    <div className="bg-[#181b1d]">
       <Header />
       <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 text-white">
         <div className="px-4 md:px-6 animate-fade-in">
@@ -13,11 +13,19 @@ export default function Hero() {
                 Immerse Yourself in the Sounds of <span className='text-[#b197fc]'>UltraV</span>
               </h1>
               <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl animate-fade-in">
-                <Typewriter text="Discover the captivating Tropical House music of UltraV" speed={50} />
+                <Typewriter text="Discover the captivating Tropical House music of UltraV" speed={30} />
               </p>
             </div>
-          </div>
+            <div className="mt-8 flex space-x-4">
+          <button className="inline-flex h-10 items-center justify-center rounded-md bg-gray-800 px-6 py-2 text-sm font-medium text-gray-50 shadow-sm transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300">
+            Get Started
+          </button>
+          <button className="inline-flex h-10 items-center justify-center rounded-md border text-gray-900 bg-white px-6 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300">
+            Learn More
+          </button>
         </div>
+          </div>
+        </div> 
       </section>
     </div>
   )
