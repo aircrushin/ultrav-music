@@ -5,12 +5,10 @@
  */
 import { CardContent, Card } from "@/components/ui/card"
 import Link from "next/link"
-import Header from '../../components/header'
 import React from 'react';
 export default function Component() {
   return (
     <>
-    <Header />
       <section className="relative w-full h-[80vh] flex items-center justify-center bg-[url('/palm-trees.jpg')] bg-cover bg-center">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/80" />
         <div className="relative z-10 text-center text-white space-y-6">
