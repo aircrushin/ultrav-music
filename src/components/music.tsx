@@ -50,7 +50,7 @@ const tracks = [
 export default function Music() {
   return (
     <>
-      <section className="w-full py-12 md:py-24 bg-slate-200 animate__animated animate__slower animate__fadeInUp" id="music-section">
+      <section className="w-full py-12 md:py-24 bg-slate-200 animate__animated animate__slow animate__fadeInUp" id="music-section">
         <div className="px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <div className="flex flex-col justify-center space-y-4 px-4">
