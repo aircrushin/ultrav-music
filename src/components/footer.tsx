@@ -4,13 +4,13 @@ export default function Component() {
     return (
         <footer className="bg-gray-900 text-white py-12 md:py-16 lg:py-20">
             <div className="container mx-auto px-4 md:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
+                <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
                     <div className="flex flex-col items-start">
                         <Link className="flex items-center space-x-2 mb-4" href="#">
                             <MusicIcon className="h-8 w-8" />
                             <span className="text-xl font-bold">UltraV Music</span>
                         </Link>
-                        <p className="text-gray-400 mb-6">Discover the best music from UltraV.</p>
+                        <p className="text-gray-400 mb-6">Tropical House/Lofi/Ambient</p>
                         <div className="flex items-center space-x-4">
                             <Link className="text-gray-400 hover:text-white" href="#">
                                 <InstagramIcon className="h-6 w-6" />
@@ -35,7 +35,7 @@ export default function Component() {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="text-gray-400 hover:text-white" href="#">
+                                <Link className="text-gray-400 hover:text-white" href="https://music.163.com/djradio?id=791885465&userid=264659539" target="_blank">
                                     Playlists
                                 </Link>
                             </li>
@@ -56,12 +56,12 @@ export default function Component() {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="text-gray-400 hover:text-white" href="#">
+                                <Link className="text-gray-400 hover:text-white" href="/privacy-policy">
                                     Privacy Policy
                                 </Link>
                             </li>
                             <li>
-                                <Link className="text-gray-400 hover:text-white" href="#">
+                                <Link className="text-gray-400 hover:text-white" href="/terms-of-service">
                                     Terms of Service
                                 </Link>
                             </li>
@@ -71,33 +71,33 @@ export default function Component() {
                         <h3 className="text-lg font-bold mb-4">Friends</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link className="text-gray-400 hover:text-white" href="https://chillseason.zeabur.app/">
+                                <Link className="text-gray-400 hover:text-white" href="https://chillseason.zeabur.app/" target="_blank">
                                     Chillseason
                                 </Link>
                             </li>
                             <li>
-                                <Link className="text-gray-400 hover:text-white" href="https://zeabur.com/">
+                                <Link className="text-gray-400 hover:text-white" href="https://zeabur.com/" target="_blank">
                                     Zeabur
                                 </Link>
                             </li>
                             <li>
-                                <Link className="text-gray-400 hover:text-white" href="https://www.atlast.fm/">
-                                ATLAST
+                                <Link className="text-gray-400 hover:text-white" href="https://www.atlast.fm/" target="_blank">
+                                    ATLAST
                                 </Link>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="mt-8 md:mt-12 lg:mt-16 flex items-center justify-between">
-                    <span className="text-gray-400">© 2024 UltraV Music. All rights reserved.</span>
+                    <span className="text-gray-400 text-sm md:text-base">© 2024 UltraV Music. All rights reserved.</span>
                     <div className="flex items-center space-x-4">
-                        <Link className="text-gray-400 hover:text-white" href="#">
+                        <Link className="text-gray-400 hover:text-white" href="https://music.apple.com/cn/artist/ultra-v/1565389563" target="_blank">
                             <AppleIcon className="h-6 w-6" />
                         </Link>
-                        <Link className="text-gray-400 hover:text-white" href="#">
+                        <Link className="text-gray-400 hover:text-white" href="https://open.spotify.com/artist/0ioqyBVFLM9ce0eFyLz2Ly" target="_blank">
                             <ChromeIcon className="h-6 w-6" />
                         </Link>
-                        <Link className="text-gray-400 hover:text-white" href="#">
+                        <Link className="text-gray-400 hover:text-white" href="https://music.163.com/#/artist?app_version=9.0.80&id=12120673&dlt=0846" target="_blank">
                             <CloudIcon className="h-6 w-6" />
                         </Link>
                     </div>

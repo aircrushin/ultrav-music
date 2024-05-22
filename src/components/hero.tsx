@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div className="bg-[#181b1d]">
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 text-white">
+      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 text-white mt-10">
         <div className="px-4 md:px-6 animate-fade-in">
           <div className="flex flex-col items-center space-y-8 text-center">
             <div className="space-y-6">

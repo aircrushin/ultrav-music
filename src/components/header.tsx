@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -6,7 +6,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="relative flex items-center justify-between px-6 py-4 bg-[#181b1d] text-white shadow-md">
+    <header className="fixed top-0 w-full z-50 flex items-center justify-between px-6 py-4 bg-[#181b1d] text-white shadow-md">
       <div className="flex items-center">
         <Link href="/">
           <div className="text-2xl font-bold italic text-gradient px-2 hover:scale-105">UV</div>
@@ -47,7 +47,7 @@ export default function Header() {
   );
 }
 
-function MenuIcon(props:any) {
+function MenuIcon(props: any) {
   return (
     <svg
       {...props}
