@@ -43,7 +43,7 @@ export default function Component() {
             <Button size="icon" variant="ghost">
               <ArrowLeftIcon className="text-gray-900 dark:text-gray-100" />
             </Button>
-            <Button className="p-2" size="icon" variant="primary">
+            <Button className="p-2" size="icon" variant="ghost">
               <PlayIcon className="text-gray-900 dark:text-gray-100" />
             </Button>
             <Button size="icon" variant="ghost">
