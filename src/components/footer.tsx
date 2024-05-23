@@ -35,7 +35,7 @@ export default function Component() {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="text-gray-400 hover:text-white" href="https://music.163.com/djradio?id=791885465&userid=264659539" target="_blank">
+                                <Link className="text-gray-400 hover:text-white" href="/playlist">
                                     Playlists
                                 </Link>
                             </li>

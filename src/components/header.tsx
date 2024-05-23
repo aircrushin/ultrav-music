@@ -34,7 +34,7 @@ export default function Header() {
       </button>
 
       {isMenuOpen && (
-        <nav className="absolute top-full right-0 w-1/3 bg-[#1E293B] text-white shadow-md flex flex-col items-start space-y-2 p-4 md:hidden">
+        <nav className="absolute top-full right-0 w-1/3 bg-[#181b1d] text-white shadow-md flex flex-col items-start space-y-2 p-4 md:hidden">
           <Link className="hover:underline" href="/#music-section">
             Music
           </Link>
