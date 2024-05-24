@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Typewriter.js", "src/app/collab/page.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Typewriter.js", "src/app/collab/page.tsx", "src/lib/AOSInitializer.js"],
   "exclude": ["node_modules"]
 }

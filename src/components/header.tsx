@@ -41,6 +41,9 @@ export default function Header() {
           <Link className="hover:underline" href="/about">
             About Me
           </Link>
+          <Link className="hover:underline" href="/collab">
+            Collaboration
+          </Link>
         </nav>
       )}
     </header>

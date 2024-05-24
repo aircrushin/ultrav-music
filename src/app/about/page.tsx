@@ -32,25 +32,25 @@ export default function Component() {
         <div className="max-w-3xl mx-auto space-y-8">
           <div>
             <h2 className="text-3xl font-bold mb-4">About Me</h2>
-            <p className="text-gray-500 dark:text-gray-400">
+            <p className="text-gray-500 dark:text-gray-400" data-aos="fade-up">
               Hi there! I'm UltraV, a passionate musician who loves creating upbeat, summer vibe muisc and soundscapes that transport
               listeners to a tropical paradise. My musical journey began at a 15, when I first picked up FL Studio
               and discovered my love for crafting catchy melodies and infectious rhythms.
             </p>
-            <p className="text-gray-500 dark:text-gray-400 mt-4">
+            <p className="text-gray-500 dark:text-gray-400 mt-4" data-aos="fade-up">
               Over the years, I've honed my skills and developed a unique sound that blends elements of Tropical House, reggae, and
               lofi. My music is all about spreading positivity, evoking feelings of warmth and joy, and
               encouraging people to embrace the carefree spirit of summer.
             </p>
           </div>
           <div>
-            <h2 className="text-3xl font-bold mb-4">Connect with Me</h2>
-            <p className="text-gray-500 dark:text-gray-400 mt-4"> You can connect with me on social media or by email.</p>
-            <p className="italic items-end justify-end space-x-2 mt-4 text-end md:tracking-wider">Email: ultrav0229@gmail.com</p>
-            <p className="italic items-end justify-end text-end md:tracking-wider">wechat: aircrushin</p>
+            <h2 className="text-3xl font-bold mb-4" data-aos="fade-up">Connect with Me</h2>
+            <p className="text-gray-500 dark:text-gray-400 mt-4" data-aos="fade-up"> You can connect with me on social media or by email.</p>
+            <p className="italic items-end justify-end space-x-2 mt-4 text-end md:tracking-wider" data-aos="fade-up">Email: ultrav0229@gmail.com</p>
+            <p className="italic items-end justify-end text-end md:tracking-wider" data-aos="fade-up">wechat: aircrushin</p>
           </div>
-          <h2 className="text-3xl font-bold">Frequently Asked Questions</h2>
-          <FAQ />
+          <h2 className="text-3xl font-bold" data-aos="fade-up">Frequently Asked Questions</h2>
+          <FAQ/>
         </div>
       </section>
     </>

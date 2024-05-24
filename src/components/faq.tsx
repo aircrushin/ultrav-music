@@ -19,12 +19,12 @@ const faqData = [
 export default function Component() {
   return (
     <div className="flex justify-center items-center">
-      <Card className="w-[600px] bg-[rgb(243 244 246 / var(--tw-bg-opacity))] border-none">
+      <Card className="w-[600px] bg-[rgb(243 244 246 / var(--tw-bg-opacity))] border-none" data-aos="fade-up">
         <CardContent className="p-6">
           <Accordion className="w-full" type="multiple">
             {faqData.map((item, index) => (
               <AccordionItem key={index} value={`item-${index + 1}`}>
-                <AccordionTrigger className="hover:underline-none">
+                <AccordionTrigger className="text-start">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent>{item.answer}</AccordionContent>
