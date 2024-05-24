@@ -3,25 +3,17 @@ import { CardContent, Card } from "@/components/ui/card";
 
 const faqData = [
   {
-    question: "Why does turning my device off and on again solve all issues?",
-    answer: "Because it clears the memory and starts the system from scratch."
+    question: "How old are you and when did you start making music?",
+    answer: "I was born in 2002 and started making music when I was 16 (in middle school)."
   },
   {
-    question: "Are extra cables in the box bonus decorations?",
-    answer: "As tempting as it is to weave them into artistic sculptures, those cables are essential for connecting, charging, and beaming digital magic."
+    question: "What genres are you best at?",
+    answer: "I make mostly electronic music, specifically tropical house/future bass, but I also like to make lofi music."
   },
   {
-    question: "Can I wear my VR headset to my cousin's wedding?",
-    answer: "Yes but you might end up inadvertently dodging invisible dance partners or trying to high-five digital confetti."
+    question: "How can I contact/collab with you?",
+    answer: "You can reach me at my email address: ultrav0229@gmail.com. also, you can add my wechat: aircrushin."
   },
-  {
-    question: "How often should I update my software?",
-    answer: "It's recommended to keep your software up to date to ensure you have the latest security patches and features."
-  },
-  {
-    question: "Why does my device get hot when I'm using it?",
-    answer: "Devices can generate heat during operation, especially when running intensive tasks. This is normal, but if it gets too hot, it may indicate a problem."
-  }
 ];
 
 export default function Component() {

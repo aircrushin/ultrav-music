@@ -1,19 +1,19 @@
 "use client"
 import Head from 'next/head';
 import { useState } from 'react';
-import { ToastContainer, toast } from 'react-nextjs-toast';
+// import { ToastContainer, toast } from 'react-nextjs-toast';
 
 export default function Collab() {
   const [email, setEmail] = useState('ultrav0229@gmail.com');
 
-  const handleCopy = (e) => {
+  const handleCopy = (e:any) => {
     e.preventDefault();
-    navigator.clipboard.writeText(email).then(() => {
-      toast.notify('Email address copied to clipboard!', {
-        duration: 3, // duration in seconds
-        type: "success"
-      });
-    });
+    // navigator.clipboard.writeText(email).then(() => {
+    //   toast.notify('Email address copied to clipboard!', {
+    //     duration: 3, // duration in seconds
+    //     type: "success"
+    //   });
+    // });
   };
 
   return (
@@ -21,7 +21,7 @@ export default function Collab() {
       <Head>
         <title>Collaboration - UltraV Music</title>
       </Head>
-      <ToastContainer position="top-right"/>
+      {/* <ToastContainer position="top-right"/> */}
       <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md mt-16">
         <h1 className="text-4xl font-bold mb-6">Collaborate with UltraV</h1>
         <p className="mb-4">
