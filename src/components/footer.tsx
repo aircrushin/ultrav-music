@@ -30,7 +30,7 @@ export default function Component() {
                         <h3 className="text-lg font-bold mb-4">Explore</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link className="text-gray-400 hover:text-white" href="#">
+                                <Link className="text-gray-400 hover:text-white" href="/">
                                     Discover
                                 </Link>
                             </li>
@@ -39,10 +39,9 @@ export default function Component() {
                                     Playlists
                                 </Link>
                             </li>
-
                             <li>
-                                <Link className="text-gray-400 hover:text-white" href="#">
-                                    Albums
+                                <Link className="text-gray-400 hover:text-white" href="/collab">
+                                    Collaboration
                                 </Link>
                             </li>
                         </ul>
@@ -52,7 +51,7 @@ export default function Component() {
                         <ul className="space-y-2">
                             <li>
                                 <Link className="text-gray-400 hover:text-white" href="/contact-me">
-                                    Contact Me
+                                    Contact Support
                                 </Link>
                             </li>
                             <li>

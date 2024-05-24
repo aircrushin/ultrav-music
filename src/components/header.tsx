@@ -19,10 +19,10 @@ export default function Header() {
         <Link className="hover:underline" href="/about">
           About Me
         </Link>
-        {/* <Link className="hover:underline" href="#">
-          Shows
+        <Link className="hover:underline" href="/collab">
+          Collaboration
         </Link>
-        <Link className="hover:underline" href="#">
+        {/* <Link className="hover:underline" href="#">
           Contact
         </Link> */}
       </nav>
