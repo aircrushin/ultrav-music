@@ -23,13 +23,13 @@ export default function Collab() {
         <title>Collaboration - UltraV Music</title>
       </Head>
       {/* <ToastContainer position="top-right"/> */}
-      <Artists />
-      <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
-        <h1 className="text-4xl font-bold mb-6">Collaborate with UltraV</h1>
-        <p className="mb-4">
+      <div className="max-w-5xl mx-auto bg-white p-8 rounded-lg shadow-md mt-16">
+      <h1 className="text-4xl font-bold mb-6">Collaborate with UltraV</h1>
+      <p className="mb-4">
           If you are a producer or a singer who wants to make a dope song with me, feel free to send me a demo! <br /> I will listen to it and give you feedback as soon as possible.
         </p>
-        <h2 className="text-2xl font-bold mb-4">Genres I Collaborate With</h2>
+      <Artists />
+        <h2 className="text-2xl font-bold my-4">Genres I Collaborate With</h2>
         <p className="mb-4">
           In most cases, I collaborate with producers and singers in the following genres:
         </p>

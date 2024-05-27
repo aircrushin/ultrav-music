@@ -11,8 +11,8 @@ const featuredArtists = [
 
 export default function Artists() {
   return (
-    <div className="p-4 rounded-lg max-w-4xl mx-auto">
-      <h2 className="text-gray-800 text-2xl font-bold mb-6 mt-10">Artists I Collabed with</h2>
+    <div className="rounded-lg max-w-5xl">
+      <h2 className="text-gray-800 text-2xl font-bold mb-6">Artists I Collabed with</h2>
       <div className="space-x-6 overflow-x-hidden grid grid-cols-2 lg:grid-cols-6 md:grid-col-3">
         {featuredArtists.map((artist, index) => (
           <div key={index} className="flex-none text-center">

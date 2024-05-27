@@ -1,9 +1,24 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+  }, [isMenuOpen]);
 
   return (
     <header className="fixed top-0 w-full z-50 flex items-center justify-between px-6 py-4 bg-[#181b1d] text-white shadow-md">
@@ -34,7 +49,10 @@ export default function Header() {
       </button>
 
       {isMenuOpen && (
-        <nav className="absolute top-full right-0 w-1/3 bg-[#181b1d] text-white shadow-md flex flex-col items-start space-y-2 p-4 md:hidden">
+        <nav
+          ref={menuRef}
+          className="absolute top-full right-0 w-1/3 bg-[#181b1d] text-white shadow-md flex flex-col items-start space-y-2 p-4 md:hidden"
+        >
           <Link className="hover:underline" href="/#music-section">
             Music
           </Link>
