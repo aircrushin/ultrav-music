@@ -1,6 +1,7 @@
 "use client"
 import Head from 'next/head';
 import { useState } from 'react';
+import Artists from '@/components/artists';
 // import { ToastContainer, toast } from 'react-nextjs-toast';
 
 export default function Collab() {
@@ -22,7 +23,8 @@ export default function Collab() {
         <title>Collaboration - UltraV Music</title>
       </Head>
       {/* <ToastContainer position="top-right"/> */}
-      <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md mt-16">
+      <Artists />
+      <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
         <h1 className="text-4xl font-bold mb-6">Collaborate with UltraV</h1>
         <p className="mb-4">
           If you are a producer or a singer who wants to make a dope song with me, feel free to send me a demo! <br /> I will listen to it and give you feedback as soon as possible.
