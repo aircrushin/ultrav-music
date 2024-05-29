@@ -5,7 +5,7 @@ const featuredArtists = [
   { name: 'Einwil', imageUrl: '/artists/einwil.jpg' },
   { name: 'Nover', imageUrl: '/artists/Nover.jpg' },
   { name: 'sukii', imageUrl: '/artists/sukii.jpg' },
-  { name: 'notKitty', imageUrl: '/artists/notKitty.jpg' },
+  // { name: 'notKitty', imageUrl: '/artists/notKitty.jpg' },
   { name: 'Oscar Yuan', imageUrl: '/artists/oscaryuan.jpg' },
 ]
 
