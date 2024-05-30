@@ -35,7 +35,7 @@ export default function Component() {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="text-gray-400 hover:text-white" href="/playlist">
+                                <Link className="text-gray-400 hover:text-white" href="https://www.atlast.fm/playlists/" target="_blank">
                                     Playlists
                                 </Link>
                             </li>
