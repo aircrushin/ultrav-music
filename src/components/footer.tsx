@@ -1,7 +1,9 @@
 import Link from "next/link"
+import Banner from "@/components/banner";
 
 export default function Component() {
     return (
+                <div>
         <footer className="bg-gray-900 text-white py-12 md:py-16 lg:py-20" data-aos="fade-up">
             <div className="container mx-auto px-4 md:px-6 lg:px-8">
                 <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
@@ -103,6 +105,8 @@ export default function Component() {
                 </div>
             </div>
         </footer>
+                                <Banner />
+        </div>
     )
 }
 

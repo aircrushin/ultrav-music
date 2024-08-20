@@ -1,6 +1,7 @@
 // components/Hero.js
 import Typewriter from './Typewriter';
 import Link from "next/link";
+import Banner from '@/components/banner'; 
 export default function Hero() {
   return (
     <div className="bg-[#181b1d]">

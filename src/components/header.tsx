@@ -1,6 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import Banner from "@/components/banner";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,6 +22,7 @@ export default function Header() {
   }, [isMenuOpen]);
 
   return (
+    <div>
     <header className="fixed top-0 w-full z-50 flex items-center justify-between px-6 py-4 bg-[#181b1d] text-white shadow-md">
       <div className="flex items-center">
         <Link href="/">
@@ -65,6 +67,7 @@ export default function Header() {
         </nav>
       )}
     </header>
+    </div>
   );
 }
 
