@@ -105,7 +105,6 @@ export default function Component() {
                 </div>
             </div>
         </footer>
-                                <Banner />
         </div>
     )
 }
