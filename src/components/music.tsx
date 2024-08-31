@@ -1,8 +1,4 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/b8tAN0SvGkH
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
+
 import Link from "next/link";
 import '../app/animate.css';
 import Typewriter from './Typewriter';

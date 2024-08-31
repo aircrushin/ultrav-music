@@ -1,7 +1,6 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import Banner from "@/components/banner";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +29,7 @@ export default function Header() {
         </Link>
       </div>
       <nav className="hidden md:flex items-center space-x-6">
-        <Link className="hover:underline" href="/#music-section">
+        <Link className="hover:underline" href="/music">
           Music
         </Link>
         <Link className="hover:underline" href="/about">
@@ -55,7 +54,7 @@ export default function Header() {
           ref={menuRef}
           className="absolute top-full right-0 w-1/3 bg-[#181b1d] text-white shadow-md flex flex-col items-start space-y-2 p-4 md:hidden"
         >
-          <Link className="hover:underline" href="/#music-section">
+          <Link className="hover:underline" href="/music">
             Music
           </Link>
           <Link className="hover:underline" href="/about">

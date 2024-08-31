@@ -1,15 +1,12 @@
-import Chat from '@/components/chat';
-import Hero from '../components/hero'
-import Music from '../components/music'
-import Banner from '@/components/banner';
+  
+import Hero from '@/components/hero';
+import Music from '@/components/music';
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <Hero />
-      <Banner />
-      {/* <Music /> */}
-      {/* <Chat /> */}
-    </div>
+      <Music />
+    </main>
   );
 }
