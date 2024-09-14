@@ -1,23 +1,28 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-export default function Header() {
+function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      if (isMenuOpen && !(event.target as Element).closest('.menu-container')) {
         setIsMenuOpen(false);
       }
     };
 
-    if (isMenuOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
-    }
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
   }, [isMenuOpen]);
 
   return (
@@ -28,7 +33,7 @@ export default function Header() {
           <div className="text-2xl font-bold italic text-gradient px-2 hover:scale-105">UV</div>
         </Link>
       </div>
-      <nav className="hidden md:flex items-center space-x-6">
+      <nav className="hidden md:flex items-center space-x-6 ml-auto">
         <Link className="hover:underline" href="/music">
           Music
         </Link>
@@ -42,29 +47,29 @@ export default function Header() {
           Contact
         </Link> */}
       </nav>
-      <button
-        className="md:hidden p-2 rounded-md hover:bg-gray-700"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-      >
-        <MenuIcon className="h-6 w-6" />
-      </button>
-
-      {isMenuOpen && (
-        <nav
-          ref={menuRef}
-          className="absolute top-full right-0 w-1/3 bg-[#181b1d] text-white shadow-md flex flex-col items-start space-y-2 p-4 md:hidden"
+      <div className="menu-container md:hidden">
+        <button
+          className="p-2 rounded-md hover:bg-gray-700"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <Link className="hover:underline" href="/music">
-            Music
-          </Link>
-          <Link className="hover:underline" href="/about">
-            About Me
-          </Link>
-          <Link className="hover:underline" href="/collab">
-            Collaboration
-          </Link>
-        </nav>
-      )}
+          <MenuIcon className="h-6 w-6" />
+        </button>
+        {isMenuOpen && (
+          <nav
+            className="absolute top-full right-0 w-full bg-[#181b1d] text-white shadow-md flex flex-col items-stretch p-4"
+          >
+            <Link className="hover:underline py-2 px-4" href="/music">
+              Music
+            </Link>
+            <Link className="hover:underline py-2 px-4" href="/about">
+              About Me
+            </Link>
+            <Link className="hover:underline py-2 px-4" href="/collab">
+              Collaboration
+            </Link>
+          </nav>
+        )}
+      </div>
     </header>
     </div>
   );
@@ -90,3 +95,5 @@ function MenuIcon(props: any) {
     </svg>
   );
 }
+
+export default Header;
